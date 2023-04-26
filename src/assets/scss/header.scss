@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  height: $header-height;
+  background-color: $black-color;
+  &__burger {
+    margin-right: 10px;
+    width: 24px;
+    height: 16px;
+    background-image: url("@/assets/images/svg/burger.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    cursor: pointer;
+    transition-property: background-image;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    &:hover {
+      background-image: url("@/assets/images/svg/burger_hover.svg");
+    }
+    &:focus {
+      background-image: url("@/assets/images/svg/burger_hover.svg");
+    }
+    &:active {
+      background-image: url("@/assets/images/svg/burger_active.svg");
+    }
+  }
+  &__logo {
+    margin-right: 10px;
+    width: $header-height;
+    height: $header-height;
+  }
+  &__text {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: $primary-color;
+  }
+  &__text-result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.header-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-middle-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

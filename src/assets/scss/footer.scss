@@ -1,0 +1,23 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  &__text {
+    margin: 0;
+    color: rgba(255, 255, 255, .5);
+  }
+}
+
+@media (min-width: $s1152) {
+ .footer__text {
+  font-size: 18px;
+  line-height: 22px;
+ }
+}

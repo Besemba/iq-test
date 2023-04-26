@@ -1,0 +1,94 @@
+.section-hero {
+  height: calc(100vh - $header-height);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: radial-gradient(circle, #294fc266, #294fc200 50%), url("@/assets/images/space-background.webp");
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 27px;
+  padding-bottom: 15px;
+  height: 100%;
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+
+  &__main-heading {
+    margin: 0;
+    max-width: 275px;
+    font-size: 30px;
+    color: $primary-color;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 19px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+
+  &__yellow-text {
+    color: $primary-color;
+  }
+  &__brain-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  &__more-btn {
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+}
+
+.more-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6px;
+  &__link {
+    color: #fff;
+  }
+}
+
+@media (min-width: $s720) {
+  .hero__more-btn {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: $s900) {
+  .hero__main-heading {
+    max-width: inherit;
+  }
+
+  .hero__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $s1152) {
+  .hero__title{
+    font-size: 22px;
+  }
+  .hero__main-heading {
+    font-size: 36px;
+  }
+  .hero__text {
+    font-size: 20px;
+  }
+}

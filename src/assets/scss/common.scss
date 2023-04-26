@@ -1,0 +1,88 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 290px;
+  width: 100%;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.7em 2.5em;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  border-radius: 50px;
+  transition-property: background, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  &:hover {
+    background: #cb9f00;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+  &:disabled {
+    background: $grey-color;
+    color: $dark-grey-color;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transform: none;
+  }
+}
+
+.btn-primary {
+  color: #0d0c11;
+  background: $primary-color;
+}
+.btn-secondary {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+
+.page-content {
+  position: relative;
+}
+
+@media (min-width: $s384) {
+  .container {
+    max-width: 340px;
+  }
+}
+
+@media (min-width: $s480) {
+  .container {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: $s640) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: $s720) {
+  .container {
+    max-width: 690px;
+  }
+}
+
+@media (min-width: $s900) {
+  .container {
+    max-width: 870px;
+  }
+}
+
+@media (min-width: $s1152) {
+  .container {
+    max-width: 1100px;
+  }
+  .btn-primary,
+  .btn-secondary {
+    font-size: 18px;
+  }
+}

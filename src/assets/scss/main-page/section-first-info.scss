@@ -1,0 +1,74 @@
+.section-first-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  background-image: radial-gradient(ellipse, #2950c2 0%, #265bc7f5 40%, #2762bb00 85%),
+    url("@/assets/images/first-info-background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.first-info {
+  display: flex;
+  justify-content: center;
+  padding: 85px 0 45px 0;
+  &__text {
+    position: relative;
+    margin: 0;
+    max-width: 199px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #fff;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: -20px;
+      width: 23px;
+      height: 23px;
+      background-image: url("@/assets/images/svg/left-quotes.svg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 23px;
+      height: 23px;
+      background-image: url("@/assets/images/svg/right-quotes.svg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+    }
+  }
+}
+
+@media (min-width: $s480) {
+  .first-info__text {
+    max-width: 340px;
+  }
+}
+
+@media (min-width: $s640) {
+  .first-info__text {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: $s900) {
+  .first-info{
+    padding: 0;
+  }
+  .first-info__text {
+    max-width: 800px;
+    font-size: 22px;
+  }
+}
